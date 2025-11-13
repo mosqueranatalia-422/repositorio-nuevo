@@ -1,6 +1,17 @@
 # Mar de Soles - Aplicación React
 
-Esta es la versión React del sitio web Mar de Soles, una tienda de productos de skincare.
+*Nuestra Tienda* es un emprendimiento digital dedicado al maquillaje, el cuidado facial y el bienestar personal.  
+Nace con el propósito de ofrecer una experiencia de compra moderna, segura y cercana, dirigida especialmente a mujeres entre *15 y 50 años* que disfrutan del *skincare, el **maquillaje* y todos esos detalles que las hacen sentir únicas.  
+
+## 👩‍💻 Creadoras del proyecto
+
+Este proyecto fue desarrollado con dedicación, creatividad y mucho amor por:
+
+- *💅 Ashly Moncada* — Desarrolladora de software y diseñadora de interfaz.  
+- *💄 Natalia Mosquera* — Desarrolladora de software y encargada de experiencia de usuario.  
+
+Ambas estudiantes apasionadas por la tecnología, el emprendimiento y el mundo del maquillaje.  
+“Nuestra Tienda” es el resultado de unir nuestras pasiones: la *belleza* y la *programación*. 💕
 
 ## 🚀 Tecnologías Utilizadas
 
@@ -89,3 +100,11 @@ npm run build
 - `/iniciarsesion` - Registro
 - `/promociones` - Promociones
 - `/opiniones` - Opiniones de clientes
+
+## Créditos
+
+Desarrollado con 💻 y 💅 por:
+*Ashly Moncada & Natalia Mosquera*
+Estudiantes de Desarrollo de Software — Proyecto académico y de emprendimiento digital.
+
+✨ “Porque la belleza también se construye con código.” 💄

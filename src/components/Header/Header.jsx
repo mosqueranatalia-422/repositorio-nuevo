@@ -47,7 +47,7 @@ function Header() {
             VER PRODUCTOS
           </a>
           <a 
-            href="https://www.instagram.com/mardesoles_skin?igsh=MWw5cHN3N3g0YThmMw%3D%3D&utm_source=qr"
+            href="https://www.instagram.com/mardesoles2025?igsh=MW9uY3gzbzRkNGNjbg%3D%3D&utm_source=qr"
             className="btn btn-compra"
           >
             COMPRAR AHORA
