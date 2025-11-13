@@ -3,6 +3,7 @@ import Footer from '../../components/Footer/Footer'
 import WhatsAppButton from '../../components/WhatsAppButton/WhatsAppButton'
 import ProductCard from '../../components/ProductCard/ProductCard'
 import './Promociones.css'
+import { Link } from 'react-router-dom'
 
 function Promociones() {
   const productos = [
@@ -49,8 +50,8 @@ function Promociones() {
           </div>
           <div className="promo">
             <img src="/img/icono candado.png" alt="Registro" />
-            <p>10% DE DESCUENTO POR REGISTRARTE EN NUESTRA TIENDA</p>
-            <button className="btn-descuento">¡QUIERO MI DESCUENTO!</button>
+            <p>10% DE DESCUENTO POR REGISTRARTE EN NUESTRA TIENDA</p> <br />
+            <Link to="/registro" className="btn-descuento">¡QUIERO MI DESCUENTO!</Link>
           </div>
         </section>
 
