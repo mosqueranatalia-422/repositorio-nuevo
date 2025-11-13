@@ -24,7 +24,6 @@ function Login() {
           <img src="/img/logo.jpeg" alt="Logo" className="logo-img" />
           
           <form onSubmit={handleRegister}>
-            <h2 className="titulo">Regístrate para continuar</h2>
 
             <div className="inputBox">
               <input 

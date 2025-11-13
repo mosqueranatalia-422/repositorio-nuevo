@@ -26,7 +26,6 @@ function Register() {
       <div className="login-container">
         <div className="login-card">
           <h1 className="logo">MardeSoles</h1>
-          <h2 className="titulo">Inicia sesión en tu cuenta</h2>
 
           <form onSubmit={handleLogin}>
             <div className="inputBox">
