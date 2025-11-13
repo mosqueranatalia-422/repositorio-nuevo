@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Mar De Soles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+  
+<body>
+  <header class="encabezado">
+    <nav class="titulo">
+      <a class="titu" href="index.html">Inicio</a class="titu">
+      <a class="titu" href="/promociones.html">Promociones</a class="titu">
+      <a class="titu" href="/opiniones.html">Opiniones</a class="titu">
+    <img class="cart" src="/img/bolsa-2.png" alt="Carrito">
+    <img onclick="window.location.href='registro.html'" class="cart_2" src="/img/usuario.png" alt="Carrito">
+
+    </nav>
+    <div id="catalogo" class="productos-lista">
+
+    </div>
+
+
+
+
+
+    <img class="img" src="/img/logo.jpeg" alt="logo empresa">
+    <h2 class="slogan">Realza tu belleza <br> natural de tu piel</h2>
+
+    <h3 class="DESCUBRE">Descubre productos de skincare que nutren y revitalizan</h3>
+  </header>
+
+  <div class="botones-contenedor">
+    <a href="/img/Catalogo mar de soles_20250815_110306_0000.pdf" class="btn btn-ver">VER PRODUCTOS</a>
+    <a href="https://www.instagram.com/mardesoles_skin?igsh=MWw5cHN3N3g0YThmMw%3D%3D&utm_source=qr"
+      class="btn btn-compra">COMPRAR AHORA</a>
+  </div>
+
+  <div class="iconos-lista">
+    <div class="icono-item">
+      <img src="./img/icons8-entrega.gif" alt="Envíos a todo el país">
+      <p>Envios a todo el pais</p>
+    </div>
+    <div class="icono-item">
+      <img src="./img/icons8-planta-50.png" alt="Productos naturales">
+      <p>Productos naturales</p>
+    </div>
+    <div class="icono-item">
+      <img src="./img/metodo de pago.png" alt="Pago seguro">
+      <p>Pago seguro</p>
+    </div>
+  </div>
+
+  <div class="productos-lista">
+
+    <div class="producto-item">
+      <img src="./img/bases.jpeg" alt="Base TimeWise">
+      <h3>Base TimeWise</h3>
+      <h4 class="abajo">Base ligera para una piel luminosa</h4>
+      <p>COP 50.000 C/U</p>
+    </div>
+
+    <div class="producto-item">
+      <img src="./img/spray.jpeg" alt="Spray Corporal">
+      <h3>Spray corporal</h3>
+      <h4>Fragancias qué envuelven</h4>
+      <p>COP 68.900</p>
+    </div>
+
+    <div class="producto-item">
+      <img src="./img/arrugas.jpeg" alt="Reductor de Arrugas">
+      <h3>Reductor de arrugas</h3>
+      <h4>Adiós lineas de expresión</h4>
+      <p>COP 88.000</p>
+    </div>
+
+    <div class="producto-item">
+      <img src="./img/gel.jpeg" alt="Rutina de Ducha">
+      <h3>Rutina de noche</h3>
+      <h4>Un olor fresco y floral todo el día</h4>
+      <p>COP 168.000</p>
+    </div>
+  </div>
+
+  <div class="imagenes-2">
+
+    <div class="arreglar-item">
+      <img src="./img/crema.jpeg" alt="Crema suavizante">
+      <h3>Crema corporal reafirmante</h3>
+      <h4>Dale ese glow a tu piel</h4>
+      <p>cop 94.900</p>
+    </div>
+
+    <div class="arreglar-item">
+      <img src="./img/serum.jpeg" alt="Serum revitalizan">
+      <h3>Suero hidratante</h3>
+      <h4>Adios arrugas y manchas</h4>
+      <p>cop 89.900</p>
+    </div>
+
+    <div class="arreglar-item">
+      <img src="./img/perfume.jpeg" alt="perfume">
+      <h3>Fragancia única que realza la personalidad</h3>
+      <h4>Tus dias magicos con excelentes aromas</h4>
+      <p>cop 104.000</p>
+    </div>
+
+    <div class="arreglar-item">
+      <img src="./img/pestañina.jpeg" alt="pestañina">
+      <h3>Alarga y define tus pestañas de forma natural y elegante.</h3>
+      <h4>Mirada de impacto</h4>
+      <p>cop 55.400</p>
+    </div>
+
+  </div>
+
+  <div class="testimonio">
+    <div class="imagen">
+      <img src="/img/modelo.jpg" alt="Testimonio de cliente">
+    </div>
+
+    <body>
+  <h2>Deja tu opinión</h2>
+
+  <label for="nombre">Tu nombre:</label>
+  <input id="nombre" type="text">
+
+  <label for="opinion">Tu opinión:</label>
+  <textarea id="opinion"></textarea>
+
+  <button id="btnEnviar" type="button">Enviar</button>
+
+  <script>
+    document.getElementById("btnEnviar").addEventListener("click", function () {
+      const nombre = document.getElementById("nombre").value.trim();
+      const opinion = document.getElementById("opinion").value.trim();
+
+      if (nombre && opinion) {
+        let opiniones = JSON.parse(localStorage.getItem("opiniones")) || [];
+
+        let fecha = new Date().toLocaleString("es-CO", {
+          day: "2-digit", month: "2-digit", year: "numeric",
+          hour: "2-digit", minute: "2-digit"
+        });
+
+        opiniones.push({ nombre, opinion, fecha });
+        localStorage.setItem("opiniones", JSON.stringify(opiniones));
+
+        // Ir a la página de opiniones
+        window.location.href = "opiniones.html";
+      } else {
+        alert("Por favor completa todos los campos.");
+      }
+    });
+  </script>
+</body>
+  </div>
+  
+
+  <footer class="footer">
+    <article class="footer-2">
+      <a href="https://www.facebook.com/">
+         <img href="" class="imagenes" src="img/facebook (2).png"alt="Facebook">
+      </a>
+     
+      <a href="https://x.com/?lang=es">
+        <img href="" class="imagenes"src="img/twiter (2).png" alt="Twiter">
+      </a>
+      
+      <a href="https://workspace.google.com/intl/es-419/gmail/">
+        <img href="" class="imagenes"src="img/gmail (2).png" alt="Gmail">
+      </a>
+      
+      <a href="https://www.instagram.com/mardesoles_skin/?igsh=MWw5cHN3N3g0YThmMw%3D%3D&utm_source=qr#">
+        <img href="https://www.instagram.com/mardesoles_skin/?igsh=MWw5cHN3N3g0YThmMw%3D%3D&utm_source=qr#" class="imagenes"src="img/intagram.png" alt="instagram">
+      </a>
+      
+    </article>
+        <p class="copyright">© 2025 Mar De Soles | Todos los derechos reservados</p>
+</footer>
+
+
+  
+  
+  
+<a href="https://w.app/mardsoles_com" target="_blank" id="whatsapp-link">
+    <img src="/img/whatsapp.png" alt="WhatsApp" id="whatsapp-icon">
+  </a>
+
+  <script src="formulario.js"></script>
+</body>
+
+</html>
