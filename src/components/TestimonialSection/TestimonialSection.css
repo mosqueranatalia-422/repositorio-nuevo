@@ -1,0 +1,70 @@
+.testimonio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  border-top: 1px;
+}
+
+.testimonio .imagen img {
+  width: 250px;
+  border-radius: 8px;
+  height: auto;
+}
+
+.testimonio .texto {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #000;
+  max-width: 350px;
+}
+
+.testimonio .texto p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.formulario_2 {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.formulario_2 label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.formulario_2 input[type="text"],
+.formulario_2 textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.formulario_2 textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.formulario_2 button {
+  background-color: #E2ECFF;
+  color: black;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formulario_2 button:hover {
+  background-color: #f5d3ea;
+}

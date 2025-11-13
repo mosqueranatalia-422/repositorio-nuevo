@@ -1,0 +1,23 @@
+.iconos-lista {
+  display: flex;
+  justify-content: center;
+  gap: 290px;
+  margin-top: 50px;
+}
+
+.icono-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icono-item img {
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.icono-item p {
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.2;
+}

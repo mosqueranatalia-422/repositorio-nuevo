@@ -1,0 +1,142 @@
+.encabezado {
+  width: 100%;
+  height: 30vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFEBF9;
+  position: relative;
+}
+
+.titulo {
+  position: absolute;
+  right: 150px;
+  top: 20px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.titulo a:hover {
+  color: #ef45a8;
+}
+
+.titu {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  text-align: center;
+}
+
+.img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 40px;
+  top: 20px;
+}
+
+.slogan {
+  position: absolute;
+  left: 140px;
+  top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  line-height: 1.3;
+}
+
+.DESCUBRE {
+  position: absolute;
+  left: 140px;
+  top: 70px;
+  font-size: 12px;
+  color: #666;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cart {
+  width: 25px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.cart:hover {
+  transform: scale(1.1);
+}
+
+.carrito-icono-contenedor {
+  position: absolute;
+  right: 75px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.carrito-badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #d33e96;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cart_2 {
+  position: absolute;
+  right: 40px;
+  top: 20px;
+  width: 25px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.cart_2:hover {
+  transform: scale(1.1);
+}
+
+.botones-contenedor {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 100px;
+}
+
+.botones-contenedor .btn {
+  padding: 15px 40px;
+  border: none;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.botones-contenedor .btn:hover {
+  background-color: #ddd;
+}
+
+.btn-ver {
+  background-color: #FFC7C2;
+}
+
+.btn-compra {
+  background-color: #E2ECFF;
+}

@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.img-principal {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+.img-modelo {
+  width: 23%;
+  height: 400px;
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+.text {
+  margin-left: 500px;
+  margin-top: -260px;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+.texto-1 {
+  margin-left: 700px;
+  margin-top: 8px;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.descuento {
+  margin-top: 270px;
+  margin-left: 750px;
+  font-size: 23px;
+  height: 45px;
+  width: 28%;
+  background-color: #FFE6F6;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.promociones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 200px auto;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.promo {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.promo img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.btn-descuento {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #d33e96;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-descuento:hover {
+  background-color: #e48abe;
+}
+
+.productos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 10px auto;
+  text-align: center;
+  position: relative;
+  top: -150px;
+  flex-wrap: wrap;
+}
+
+.contenedor-boton {
+  display: flex;
+  justify-content: center;
+  margin-top: -70px;
+  margin-bottom: 30px;
+}
+
+.boton {
+  padding: 10px 20px;
+  background-color: #f7c0e5;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s;
+}
+
+.boton:hover {
+  background-color: #e48abe;
+}

@@ -1,0 +1,22 @@
+.footer {
+  background-color: #f5d3ea;
+  color: #fff;
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+  height: 100px;
+}
+
+.footer-2 {
+  text-align: center;
+}
+
+.imagenes {
+  width: 35px;
+  height: 35px;
+}
+
+.copyright {
+  margin-top: 10px;
+  margin-left: 480px;
+  color: #000;
+}
